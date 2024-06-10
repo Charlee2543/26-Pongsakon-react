@@ -4,7 +4,7 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import NevBar from "./components/Layout";
 import AmOwner from "./components/Owner";
-import AtHome from "./App";
+import App from "./App";
 
 const router = createBrowserRouter([
 	{
@@ -23,7 +23,7 @@ const router = createBrowserRouter([
 		children: [
 			{
 				path: "",
-				element: <AtHome />,
+				element: <App />,
 			},
 		],
 	},
