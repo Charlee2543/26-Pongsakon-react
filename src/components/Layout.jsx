@@ -2,8 +2,8 @@ import { Outlet, Link } from "react-router-dom";
 
 const NevBar = () => {
 	return (
-		<div>
-			<ul className=" flex justify-end items-center ">
+		<div className="bg-[#e8e8e8] p-10">
+			<ul className=" flex justify-end items-center">
 				<li className="my-8">
 					<Link to="/">Home</Link>
 				</li>

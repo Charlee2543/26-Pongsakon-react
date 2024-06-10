@@ -1,11 +1,11 @@
-import React from "react";
+// import React from "react";
 import { useState } from "react";
 import AdminPage from "./components/Admin";
 import UserPage from "./components/User";
 
 function App() {
-	const [admin, setAdmin] = useState(false);
 	const [user, setUser] = useState(false);
+	const [admin, setAdmin] = useState(false);
 	// const [outPut, setOutPut] = useState();
 	const clickUser = () => {
 		setUser(true);
@@ -21,12 +21,12 @@ function App() {
 			<h1 className="">Generation Thailand</h1>
 			<h1 className="">React - Assessment</h1>
 			<button type="button" onClick={clickUser} className="bg-slate-500 m-10">
-				User
+				User Home Sector
 			</button>
 			<button type="button" onClick={clickAdmin} className="bg-slate-500 m-10">
-				Admin
+				Admin Home Sector
 			</button>
-			{user ? admin ? <UserPage /> : "" : <AdminPage />}
+			{admin ? user ? <UserPage /> : <AdminPage /> : ""}
 		</div>
 	);
 }
